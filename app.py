@@ -1,9 +1,13 @@
 import random
 
+print("Welcome to Rock, Paper and Scissors")
+
+
 
 def choose():
-    print("\nChoose Rock, Paper, or Scissors.")
-    choice = input().lower()
+    choice = input("\nChoose Rock, Paper, or Scissors.").lower()
+    while choice not in ["rock","paper","scissors"]:
+        choice = input("Invalid choice. Please enter rock, paper, or scissors: ").lower()
     return choice
 
 
@@ -47,7 +51,7 @@ def play_game():
             print("\nComputer wins!")
             computer_wins += 1
         else:
-            print("\nIt's a tie!")
+            print("\nIt's a Tie!")
             tie +=1
         
         play_again = input("Do you want to play again? (y/n): ").lower()
