@@ -5,7 +5,7 @@ print("Welcome to Rock, Paper and Scissors")
 
 
 def choose():
-    choice = input("\nChoose Rock, Paper, or Scissors.").lower()
+    choice = input("\nChoose Rock, Paper, or Scissors:").lower()
     while choice not in ["rock","paper","scissors"]:
         choice = input("Invalid choice. Please enter rock, paper, or scissors: ").lower()
     return choice
